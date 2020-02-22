@@ -1,0 +1,146 @@
+\hypertarget{classMainWindow}{}\section{Dokumentacja klasy Main\+Window}
+\label{classMainWindow}\index{MainWindow@{MainWindow}}
+
+
+Klasa \mbox{\hyperlink{classMainWindow}{Main\+Window}} definiuje metody tworzące i obsługujące sesje gry na serwerze, odpowiada za całościowy wygląd klienta gry.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+Diagram dziedziczenia dla Main\+Window\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMainWindow}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMainWindow_a996c5a2b6f77944776856f08ec30858d}\label{classMainWindow_a996c5a2b6f77944776856f08ec30858d}} 
+{\bfseries Main\+Window} (Q\+Widget $\ast$parent=nullptr)
+\item 
+\mbox{\hyperlink{classStatus}{Status}} \mbox{\hyperlink{classMainWindow_aebbc3ce8ecac3db6b5aba3b844fc3afb}{new\+Game}} (Q\+String user, Q\+String server)
+\begin{DoxyCompactList}\small\item\em Metoda wywoływana podczas tworzenia nowej gry. Wysyła żądanie do serwera w celu utworzenia nowej sesji gry. Odtwarza dźwięk. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStatus}{Status}} \mbox{\hyperlink{classMainWindow_a1cbb495e0fca342d703fb18e5dd82b3d}{shot\+Game}} (Q\+String user, Q\+String shot, Q\+String server)
+\begin{DoxyCompactList}\small\item\em Metoda wywoływana podczas kliknięcia na jedno z pól na planszy. Wysyła żądanie do serwera w celu sprawdzenia i zapisania rezultatu oddanego strzału. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStatus}{Status}} \mbox{\hyperlink{classMainWindow_a86257929f80454cadd0a45a87e28497f}{get\+Game}} (Q\+String user, Q\+String server)
+\begin{DoxyCompactList}\small\item\em Metoda wywoływana podczas wczytywania gry. Wysyła żądanie do serwera w celu otrzymania danych o istniejącej sesji gry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMainWindow_a7a7aa4e930aeb02af314b919a7a6e8f9}{show\+Status}} (\mbox{\hyperlink{classStatus}{Status}} $\ast$status)
+\begin{DoxyCompactList}\small\item\em Wypisuje informacje do konsoli. Odtwarza odpowiednie dźwięki. Wyświetla zapytania do użytkownika. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classMainWindow_a2b5463ae209a03d1680b39c950dac8be}{mouse\+Press\+Event}} (Q\+Mouse\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Rysuje znak X lub ikonę statku na klikniętym polu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMainWindow_a2da19b23a75b83dcc8b8f6b6128463a3}\label{classMainWindow_a2da19b23a75b83dcc8b8f6b6128463a3}} 
+void \mbox{\hyperlink{classMainWindow_a2da19b23a75b83dcc8b8f6b6128463a3}{paint\+Event}} (Q\+Paint\+Event $\ast$)
+\begin{DoxyCompactList}\small\item\em Przeciążenie rysowania zapewnia skalowanie tła. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMainWindow_ae12f8f63791595567b6250f8bb002bda}\label{classMainWindow_ae12f8f63791595567b6250f8bb002bda}} 
+void \mbox{\hyperlink{classMainWindow_ae12f8f63791595567b6250f8bb002bda}{resize\+Event}} (Q\+Resize\+Event $\ast$event)
+\begin{DoxyCompactList}\small\item\em Ustala położenie wszystkich elementów w skalowalnym oknie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa \mbox{\hyperlink{classMainWindow}{Main\+Window}} definiuje metody tworzące i obsługujące sesje gry na serwerze, odpowiada za całościowy wygląd klienta gry. 
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{classMainWindow_a86257929f80454cadd0a45a87e28497f}\label{classMainWindow_a86257929f80454cadd0a45a87e28497f}} 
+\index{MainWindow@{MainWindow}!getGame@{getGame}}
+\index{getGame@{getGame}!MainWindow@{MainWindow}}
+\subsubsection{\texorpdfstring{getGame()}{getGame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStatus}{Status}} Main\+Window\+::get\+Game (\begin{DoxyParamCaption}\item[{Q\+String}]{user,  }\item[{Q\+String}]{server }\end{DoxyParamCaption})}
+
+
+
+Metoda wywoływana podczas wczytywania gry. Wysyła żądanie do serwera w celu otrzymania danych o istniejącej sesji gry. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em user} & nazwa użytkownika \\
+\hline
+{\em server} & adres serwera gry \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMainWindow_a2b5463ae209a03d1680b39c950dac8be}\label{classMainWindow_a2b5463ae209a03d1680b39c950dac8be}} 
+\index{MainWindow@{MainWindow}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!MainWindow@{MainWindow}}
+\subsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily void Main\+Window\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{Q\+Mouse\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Rysuje znak X lub ikonę statku na klikniętym polu. 
+
+Obsługuje zdarzenie naciśnięcia lewego przycisku myszy. Po wskazaniu miejsca na planszy oraz naciśnięciu przycisku myszy wysyłane jest zapytanie do serwera w którym podana jest pozycja na planszy. Z serwera za pośrednictwem klasy \mbox{\hyperlink{classStatus}{Status}} jest przekazywana odpowiedź w postaci kodu. ”\+C\+H\+E\+C\+K\+E\+D” -\/ pole było już sprawdzane ”\+M\+I\+S\+S” -\/ brak trafienia ”\+E\+N\+D\+G\+A\+M\+E” -\/ koniec gry (wszystkie statki zestrzelone) ”\+S\+H\+O\+T\+D\+O\+W\+N” -\/statek zestrzelony ”\+H\+I\+T” -\/ statek trafiony 
+\begin{DoxyParams}{Parametry}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMainWindow_aebbc3ce8ecac3db6b5aba3b844fc3afb}\label{classMainWindow_aebbc3ce8ecac3db6b5aba3b844fc3afb}} 
+\index{MainWindow@{MainWindow}!newGame@{newGame}}
+\index{newGame@{newGame}!MainWindow@{MainWindow}}
+\subsubsection{\texorpdfstring{newGame()}{newGame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStatus}{Status}} Main\+Window\+::new\+Game (\begin{DoxyParamCaption}\item[{Q\+String}]{user,  }\item[{Q\+String}]{server }\end{DoxyParamCaption})}
+
+
+
+Metoda wywoływana podczas tworzenia nowej gry. Wysyła żądanie do serwera w celu utworzenia nowej sesji gry. Odtwarza dźwięk. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em user} & nazwa użytkownika \\
+\hline
+{\em server} & adres serwera gry \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+\mbox{\hyperlink{classStatus}{Status}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMainWindow_a1cbb495e0fca342d703fb18e5dd82b3d}\label{classMainWindow_a1cbb495e0fca342d703fb18e5dd82b3d}} 
+\index{MainWindow@{MainWindow}!shotGame@{shotGame}}
+\index{shotGame@{shotGame}!MainWindow@{MainWindow}}
+\subsubsection{\texorpdfstring{shotGame()}{shotGame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStatus}{Status}} Main\+Window\+::shot\+Game (\begin{DoxyParamCaption}\item[{Q\+String}]{user,  }\item[{Q\+String}]{shot,  }\item[{Q\+String}]{server }\end{DoxyParamCaption})}
+
+
+
+Metoda wywoływana podczas kliknięcia na jedno z pól na planszy. Wysyła żądanie do serwera w celu sprawdzenia i zapisania rezultatu oddanego strzału. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em user} & nazwa użytkownika \\
+\hline
+{\em shot} & kod współrzędnych pola \\
+\hline
+{\em server} & adres serwera gry \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Obiekt \mbox{\hyperlink{classStatus}{Status}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMainWindow_a7a7aa4e930aeb02af314b919a7a6e8f9}\label{classMainWindow_a7a7aa4e930aeb02af314b919a7a6e8f9}} 
+\index{MainWindow@{MainWindow}!showStatus@{showStatus}}
+\index{showStatus@{showStatus}!MainWindow@{MainWindow}}
+\subsubsection{\texorpdfstring{showStatus()}{showStatus()}}
+{\footnotesize\ttfamily void Main\+Window\+::show\+Status (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStatus}{Status}} $\ast$}]{status }\end{DoxyParamCaption})}
+
+
+
+Wypisuje informacje do konsoli. Odtwarza odpowiednie dźwięki. Wyświetla zapytania do użytkownika. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em status} & \\
+\hline
+\end{DoxyParams}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mainwindow_8h}{mainwindow.\+h}}\item 
+mainwindow.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,72 @@
+\begin{theindex}
+
+  \item {getBoard}
+    \subitem {Status}, \hyperpage{14}
+  \item {getCode}
+    \subitem {Status}, \hyperpage{14}
+  \item {getGame}
+    \subitem {MainWindow}, \hyperpage{10}
+  \item {getShipName}
+    \subitem {Status}, \hyperpage{14}
+  \item {getSteps}
+    \subitem {Status}, \hyperpage{15}
+  \item {getType}
+    \subitem {Status}, \hyperpage{15}
+
+  \indexspace
+
+  \item {MainWindow}, \hyperpage{9}
+    \subitem {getGame}, \hyperpage{10}
+    \subitem {mousePressEvent}, \hyperpage{10}
+    \subitem {newGame}, \hyperpage{10}
+    \subitem {shotGame}, \hyperpage{11}
+    \subitem {showStatus}, \hyperpage{11}
+  \item {mainwindow.h}, \hyperpage{19}
+  \item {mousePressEvent}
+    \subitem {MainWindow}, \hyperpage{10}
+  \item {MyLabel}, \hyperpage{12}
+    \subitem {MyLabel}, \hyperpage{12}
+  \item {mylabel.h}, \hyperpage{19}
+
+  \indexspace
+
+  \item {newGame}
+    \subitem {MainWindow}, \hyperpage{10}
+
+  \indexspace
+
+  \item {setBoard}
+    \subitem {Status}, \hyperpage{15}
+  \item {setCode}
+    \subitem {Status}, \hyperpage{16}
+  \item {setShipName}
+    \subitem {Status}, \hyperpage{16}
+  \item {setSteps}
+    \subitem {Status}, \hyperpage{16}
+  \item {setType}
+    \subitem {Status}, \hyperpage{16}
+  \item {shotGame}
+    \subitem {MainWindow}, \hyperpage{11}
+  \item {showStatus}
+    \subitem {MainWindow}, \hyperpage{11}
+  \item {Status}, \hyperpage{13}
+    \subitem {getBoard}, \hyperpage{14}
+    \subitem {getCode}, \hyperpage{14}
+    \subitem {getShipName}, \hyperpage{14}
+    \subitem {getSteps}, \hyperpage{15}
+    \subitem {getType}, \hyperpage{15}
+    \subitem {setBoard}, \hyperpage{15}
+    \subitem {setCode}, \hyperpage{16}
+    \subitem {setShipName}, \hyperpage{16}
+    \subitem {setSteps}, \hyperpage{16}
+    \subitem {setType}, \hyperpage{16}
+    \subitem {Status}, \hyperpage{13}
+    \subitem {toString}, \hyperpage{17}
+  \item {status.h}, \hyperpage{20}
+
+  \indexspace
+
+  \item {toString}
+    \subitem {Status}, \hyperpage{17}
+
+\end{theindex}

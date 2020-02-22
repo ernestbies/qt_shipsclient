@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SpaceShips: Plik źródłowy mainwindow.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SpaceShips
+   </div>
+   <div id="projectbrief">Gra SpaceShips to połączenie gry w statki i sapera.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">mainwindow.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="mainwindow_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef MAINWINDOW_H</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define MAINWINDOW_H</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;QMainWindow&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QtNetwork/QNetworkReply&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;QMouseEvent&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="status_8h.html">status.h</a>&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="mylabel_8h.html">mylabel.h</a>&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>Ui {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="classMainWindow.html">MainWindow</a>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classMainWindow.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMainWindow.html">MainWindow</a> : <span class="keyword">public</span> QMainWindow</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classMainWindow.html">MainWindow</a>(QWidget *parent = <span class="keyword">nullptr</span>);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    ~<a class="code" href="classMainWindow.html">MainWindow</a>();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classStatus.html">Status</a> <a class="code" href="classMainWindow.html#aebbc3ce8ecac3db6b5aba3b844fc3afb">newGame</a>(QString user, QString server);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classStatus.html">Status</a> <a class="code" href="classMainWindow.html#a1cbb495e0fca342d703fb18e5dd82b3d">shotGame</a>(QString user, QString shot, QString server);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classStatus.html">Status</a> <a class="code" href="classMainWindow.html#a86257929f80454cadd0a45a87e28497f">getGame</a>(QString user, QString server);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMainWindow.html#a7a7aa4e930aeb02af314b919a7a6e8f9">showStatus</a>(<a class="code" href="classStatus.html">Status</a> *status);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMainWindow.html#a2b5463ae209a03d1680b39c950dac8be">mousePressEvent</a>(QMouseEvent *event);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMainWindow.html#a2da19b23a75b83dcc8b8f6b6128463a3">paintEvent</a>(QPaintEvent *);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMainWindow.html#ae12f8f63791595567b6250f8bb002bda">resizeEvent</a>(QResizeEvent *event);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span> slots:</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="classStatus.html">Status</a> onRequest(QNetworkRequest *request);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> on_pushButtonNewGame_clicked();</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> on_pushButtonLoadGame_clicked();</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    Ui::MainWindow *ui;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    QNetworkAccessManager manager;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">int</span> posX;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">int</span> posY;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">bool</span> gameLoaded;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif // MAINWINDOW_H</span></div><div class="ttc" id="classMainWindow_html_a1cbb495e0fca342d703fb18e5dd82b3d"><div class="ttname"><a href="classMainWindow.html#a1cbb495e0fca342d703fb18e5dd82b3d">MainWindow::shotGame</a></div><div class="ttdeci">Status shotGame(QString user, QString shot, QString server)</div><div class="ttdoc">Metoda wywoływana podczas kliknięcia na jedno z pól na planszy. Wysyła żądanie do serwera w celu spra...</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:202</div></div>
+<div class="ttc" id="classMainWindow_html_a7a7aa4e930aeb02af314b919a7a6e8f9"><div class="ttname"><a href="classMainWindow.html#a7a7aa4e930aeb02af314b919a7a6e8f9">MainWindow::showStatus</a></div><div class="ttdeci">void showStatus(Status *status)</div><div class="ttdoc">Wypisuje informacje do konsoli. Odtwarza odpowiednie dźwięki. Wyświetla zapytania do użytkownika.</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:217</div></div>
+<div class="ttc" id="classStatus_html"><div class="ttname"><a href="classStatus.html">Status</a></div><div class="ttdoc">Klasa Status zapewnia metody służące do komunikacji klienta z serwerem. Przechowuje ilość oddanych st...</div><div class="ttdef"><b>Definition:</b> status.h:12</div></div>
+<div class="ttc" id="classMainWindow_html_aebbc3ce8ecac3db6b5aba3b844fc3afb"><div class="ttname"><a href="classMainWindow.html#aebbc3ce8ecac3db6b5aba3b844fc3afb">MainWindow::newGame</a></div><div class="ttdeci">Status newGame(QString user, QString server)</div><div class="ttdoc">Metoda wywoływana podczas tworzenia nowej gry. Wysyła żądanie do serwera w celu utworzenia nowej sesj...</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:195</div></div>
+<div class="ttc" id="classMainWindow_html_a86257929f80454cadd0a45a87e28497f"><div class="ttname"><a href="classMainWindow.html#a86257929f80454cadd0a45a87e28497f">MainWindow::getGame</a></div><div class="ttdeci">Status getGame(QString user, QString server)</div><div class="ttdoc">Metoda wywoływana podczas wczytywania gry. Wysyła żądanie do serwera w celu otrzymania danych o istni...</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:210</div></div>
+<div class="ttc" id="mylabel_8h_html"><div class="ttname"><a href="mylabel_8h.html">mylabel.h</a></div><div class="ttdoc">Plik nagłówkowy mylabel.h zawierający klasę MyLabel.</div></div>
+<div class="ttc" id="status_8h_html"><div class="ttname"><a href="status_8h.html">status.h</a></div><div class="ttdoc">Plik nagłówkowy status.h zawierający klasę Status.</div></div>
+<div class="ttc" id="classMainWindow_html_ae12f8f63791595567b6250f8bb002bda"><div class="ttname"><a href="classMainWindow.html#ae12f8f63791595567b6250f8bb002bda">MainWindow::resizeEvent</a></div><div class="ttdeci">void resizeEvent(QResizeEvent *event)</div><div class="ttdoc">Ustala położenie wszystkich elementów w skalowalnym oknie.</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:74</div></div>
+<div class="ttc" id="classMainWindow_html_a2b5463ae209a03d1680b39c950dac8be"><div class="ttname"><a href="classMainWindow.html#a2b5463ae209a03d1680b39c950dac8be">MainWindow::mousePressEvent</a></div><div class="ttdeci">void mousePressEvent(QMouseEvent *event)</div><div class="ttdoc">Rysuje znak X lub ikonę statku na klikniętym polu.</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:30</div></div>
+<div class="ttc" id="classMainWindow_html"><div class="ttname"><a href="classMainWindow.html">MainWindow</a></div><div class="ttdoc">Klasa MainWindow definiuje metody tworzące i obsługujące sesje gry na serwerze, odpowiada za całościo...</div><div class="ttdef"><b>Definition:</b> mainwindow.h:22</div></div>
+<div class="ttc" id="classMainWindow_html_a2da19b23a75b83dcc8b8f6b6128463a3"><div class="ttname"><a href="classMainWindow.html#a2da19b23a75b83dcc8b8f6b6128463a3">MainWindow::paintEvent</a></div><div class="ttdeci">void paintEvent(QPaintEvent *)</div><div class="ttdoc">Przeciążenie rysowania zapewnia skalowanie tła.</div><div class="ttdef"><b>Definition:</b> mainwindow.cpp:61</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

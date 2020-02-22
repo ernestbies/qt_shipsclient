@@ -1,0 +1,231 @@
+\hypertarget{classStatus}{}\section{Dokumentacja klasy Status}
+\label{classStatus}\index{Status@{Status}}
+
+
+Klasa \mbox{\hyperlink{classStatus}{Status}} zapewnia metody służące do komunikacji klienta z serwerem. Przechowuje ilość oddanych strzałów, nazwę trafionego statku, otrzymaną planszę z serwera i inne.  
+
+
+
+
+{\ttfamily \#include $<$status.\+h$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStatus_a2a71fbd23dad1cf1496feeabfad13dc6}{Status}} (Q\+String code, Q\+String ship\+Name, int type, int steps, Q\+String board)
+\begin{DoxyCompactList}\small\item\em Konstruktor tworzący nowy obiekt \mbox{\hyperlink{classStatus}{Status}} zgodnie z podanymi parametrami. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classStatus_af5e06b8a1eff42c1720c8a06b4bb5c11}{get\+Steps}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca liczbę kroków zapisanych w obiekcie \mbox{\hyperlink{classStatus}{Status}}. \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{classStatus_aece70dc1503772d16d5531b405d46c4c}{get\+Code}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca kod odpowiedzi serwera. \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{classStatus_a5f17aa5a599b9ba39c5d849f0132765f}{get\+Ship\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca nazwę trafionego statku. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classStatus_a340935e3e450c18898a9f676b75be4e3}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca typ trafionego statku. \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{classStatus_a0b61af52cdbc7db1d82baf89c3ef937a}{get\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Zwraca planszę gry w formie tekstowej. \end{DoxyCompactList}\item 
+Q\+String \mbox{\hyperlink{classStatus_ae86fbc75c3ebae65c26ddc4c932289e9}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em Parsuje obiekt \mbox{\hyperlink{classStatus}{Status}} do ciągu tekstowego w formacie J\+S\+ON do wysłania do serwera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStatus_a820bfefd6bcaf99fb6542156d45e987e}{set\+Steps}} (int steps)
+\begin{DoxyCompactList}\small\item\em Ustawia ilość kroków. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStatus_a19c2b6fa24bc5f22f919a272e9fb9898}{set\+Code}} (Q\+String code)
+\begin{DoxyCompactList}\small\item\em Ustawia kod trafionego pola. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStatus_a2c5e3f6a4603f9a0165764a2943fd195}{set\+Ship\+Name}} (Q\+String ship\+Name)
+\begin{DoxyCompactList}\small\item\em Ustawia nazwę trafionego statku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStatus_ac9174afa375456a797ee823619b90a87}{set\+Type}} (int type)
+\begin{DoxyCompactList}\small\item\em Ustawia typ trafionego statku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStatus_a562a7e93719368a0158535853b58b9cf}{set\+Board}} (Q\+String board)
+\begin{DoxyCompactList}\small\item\em Ustawia stan planszy gry w formie zapisu tekstowego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa \mbox{\hyperlink{classStatus}{Status}} zapewnia metody służące do komunikacji klienta z serwerem. Przechowuje ilość oddanych strzałów, nazwę trafionego statku, otrzymaną planszę z serwera i inne. 
+
+Klasa \mbox{\hyperlink{classStatus}{Status}} wykorzystywana jest do przesyłania informacji z serwera do klienta. Zawiera informacje dotyczące liczby wykonanych przez użytkownika kroków (steps), nazwę kodu wykonanych operacji lub stanu gry (code), nazwę statku kosmicznego (ship\+Name) na którym była wykonana operacja oraz jego typ (type), a także przechowuje stan planszy (board). 
+
+\subsection{Dokumentacja konstruktora i destruktora}
+\mbox{\Hypertarget{classStatus_a2a71fbd23dad1cf1496feeabfad13dc6}\label{classStatus_a2a71fbd23dad1cf1496feeabfad13dc6}} 
+\index{Status@{Status}!Status@{Status}}
+\index{Status@{Status}!Status@{Status}}
+\subsubsection{\texorpdfstring{Status()}{Status()}}
+{\footnotesize\ttfamily Status\+::\+Status (\begin{DoxyParamCaption}\item[{Q\+String}]{code,  }\item[{Q\+String}]{ship\+Name,  }\item[{int}]{type,  }\item[{int}]{steps,  }\item[{Q\+String}]{board }\end{DoxyParamCaption})}
+
+
+
+Konstruktor tworzący nowy obiekt \mbox{\hyperlink{classStatus}{Status}} zgodnie z podanymi parametrami. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em kod} & \\
+\hline
+{\em nazwa} & statku \\
+\hline
+{\em typ} & \\
+\hline
+{\em ilość} & kroków \\
+\hline
+{\em plansza} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Dokumentacja funkcji składowych}
+\mbox{\Hypertarget{classStatus_a0b61af52cdbc7db1d82baf89c3ef937a}\label{classStatus_a0b61af52cdbc7db1d82baf89c3ef937a}} 
+\index{Status@{Status}!getBoard@{getBoard}}
+\index{getBoard@{getBoard}!Status@{Status}}
+\subsubsection{\texorpdfstring{getBoard()}{getBoard()}}
+{\footnotesize\ttfamily Q\+String Status\+::get\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwraca planszę gry w formie tekstowej. 
+
+\begin{DoxyReturn}{Zwraca}
+plansza 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStatus_aece70dc1503772d16d5531b405d46c4c}\label{classStatus_aece70dc1503772d16d5531b405d46c4c}} 
+\index{Status@{Status}!getCode@{getCode}}
+\index{getCode@{getCode}!Status@{Status}}
+\subsubsection{\texorpdfstring{getCode()}{getCode()}}
+{\footnotesize\ttfamily Q\+String Status\+::get\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwraca kod odpowiedzi serwera. 
+
+\begin{DoxyReturn}{Zwraca}
+kod odpowiedzi np. S\+H\+O\+T\+D\+O\+WN, E\+N\+D\+G\+A\+ME 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStatus_a5f17aa5a599b9ba39c5d849f0132765f}\label{classStatus_a5f17aa5a599b9ba39c5d849f0132765f}} 
+\index{Status@{Status}!getShipName@{getShipName}}
+\index{getShipName@{getShipName}!Status@{Status}}
+\subsubsection{\texorpdfstring{getShipName()}{getShipName()}}
+{\footnotesize\ttfamily Q\+String Status\+::get\+Ship\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwraca nazwę trafionego statku. 
+
+\begin{DoxyReturn}{Zwraca}
+nazwa trafionego statku 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStatus_af5e06b8a1eff42c1720c8a06b4bb5c11}\label{classStatus_af5e06b8a1eff42c1720c8a06b4bb5c11}} 
+\index{Status@{Status}!getSteps@{getSteps}}
+\index{getSteps@{getSteps}!Status@{Status}}
+\subsubsection{\texorpdfstring{getSteps()}{getSteps()}}
+{\footnotesize\ttfamily int Status\+::get\+Steps (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwraca liczbę kroków zapisanych w obiekcie \mbox{\hyperlink{classStatus}{Status}}. 
+
+\begin{DoxyReturn}{Zwraca}
+liczba kroków 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStatus_a340935e3e450c18898a9f676b75be4e3}\label{classStatus_a340935e3e450c18898a9f676b75be4e3}} 
+\index{Status@{Status}!getType@{getType}}
+\index{getType@{getType}!Status@{Status}}
+\subsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily int Status\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Zwraca typ trafionego statku. 
+
+\begin{DoxyReturn}{Zwraca}
+typ trafionego statku 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStatus_a562a7e93719368a0158535853b58b9cf}\label{classStatus_a562a7e93719368a0158535853b58b9cf}} 
+\index{Status@{Status}!setBoard@{setBoard}}
+\index{setBoard@{setBoard}!Status@{Status}}
+\subsubsection{\texorpdfstring{setBoard()}{setBoard()}}
+{\footnotesize\ttfamily void Status\+::set\+Board (\begin{DoxyParamCaption}\item[{Q\+String}]{board }\end{DoxyParamCaption})}
+
+
+
+Ustawia stan planszy gry w formie zapisu tekstowego. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em plansza} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classStatus_a19c2b6fa24bc5f22f919a272e9fb9898}\label{classStatus_a19c2b6fa24bc5f22f919a272e9fb9898}} 
+\index{Status@{Status}!setCode@{setCode}}
+\index{setCode@{setCode}!Status@{Status}}
+\subsubsection{\texorpdfstring{setCode()}{setCode()}}
+{\footnotesize\ttfamily void Status\+::set\+Code (\begin{DoxyParamCaption}\item[{Q\+String}]{code }\end{DoxyParamCaption})}
+
+
+
+Ustawia kod trafionego pola. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em kod,np} & \char`\"{}\+E\+N\+D\+G\+A\+M\+E\char`\"{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classStatus_a2c5e3f6a4603f9a0165764a2943fd195}\label{classStatus_a2c5e3f6a4603f9a0165764a2943fd195}} 
+\index{Status@{Status}!setShipName@{setShipName}}
+\index{setShipName@{setShipName}!Status@{Status}}
+\subsubsection{\texorpdfstring{setShipName()}{setShipName()}}
+{\footnotesize\ttfamily void Status\+::set\+Ship\+Name (\begin{DoxyParamCaption}\item[{Q\+String}]{ship\+Name }\end{DoxyParamCaption})}
+
+
+
+Ustawia nazwę trafionego statku. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em nazwa} & statku \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classStatus_a820bfefd6bcaf99fb6542156d45e987e}\label{classStatus_a820bfefd6bcaf99fb6542156d45e987e}} 
+\index{Status@{Status}!setSteps@{setSteps}}
+\index{setSteps@{setSteps}!Status@{Status}}
+\subsubsection{\texorpdfstring{setSteps()}{setSteps()}}
+{\footnotesize\ttfamily void Status\+::set\+Steps (\begin{DoxyParamCaption}\item[{int}]{steps }\end{DoxyParamCaption})}
+
+
+
+Ustawia ilość kroków. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em ilość} & kroków \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classStatus_ac9174afa375456a797ee823619b90a87}\label{classStatus_ac9174afa375456a797ee823619b90a87}} 
+\index{Status@{Status}!setType@{setType}}
+\index{setType@{setType}!Status@{Status}}
+\subsubsection{\texorpdfstring{setType()}{setType()}}
+{\footnotesize\ttfamily void Status\+::set\+Type (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+Ustawia typ trafionego statku. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em typ} & trafionego statku \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classStatus_ae86fbc75c3ebae65c26ddc4c932289e9}\label{classStatus_ae86fbc75c3ebae65c26ddc4c932289e9}} 
+\index{Status@{Status}!toString@{toString}}
+\index{toString@{toString}!Status@{Status}}
+\subsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily Q\+String Status\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Parsuje obiekt \mbox{\hyperlink{classStatus}{Status}} do ciągu tekstowego w formacie J\+S\+ON do wysłania do serwera. 
+
+\begin{DoxyReturn}{Zwraca}
+obiekt \mbox{\hyperlink{classStatus}{Status}} w formie J\+S\+ON 
+\end{DoxyReturn}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{status_8h}{status.\+h}}\item 
+status.\+cpp\end{DoxyCompactItemize}

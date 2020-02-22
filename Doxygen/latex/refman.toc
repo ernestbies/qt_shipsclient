@@ -1,0 +1,46 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {polish}{}
+\contentsline {chapter}{\numberline {1}Strona g\IeC {\l }\IeC {\'o}wna}{1}{chapter.1}% 
+\contentsline {chapter}{\numberline {2}Indeks hierarchiczny}{3}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Hierarchia klas}{3}{section.2.1}% 
+\contentsline {chapter}{\numberline {3}Indeks klas}{5}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Lista klas}{5}{section.3.1}% 
+\contentsline {chapter}{\numberline {4}Indeks plik\IeC {\'o}w}{7}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Lista plik\IeC {\'o}w}{7}{section.4.1}% 
+\contentsline {chapter}{\numberline {5}Dokumentacja klas}{9}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Dokumentacja klasy Main\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Window}{9}{section.5.1}% 
+\contentsline {subsection}{\numberline {5.1.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{10}{subsection.5.1.1}% 
+\contentsline {subsection}{\numberline {5.1.2}Dokumentacja funkcji sk\IeC {\l }adowych}{10}{subsection.5.1.2}% 
+\contentsline {subsubsection}{\numberline {5.1.2.1}getGame()}{10}{subsubsection.5.1.2.1}% 
+\contentsline {subsubsection}{\numberline {5.1.2.2}mousePressEvent()}{10}{subsubsection.5.1.2.2}% 
+\contentsline {subsubsection}{\numberline {5.1.2.3}newGame()}{10}{subsubsection.5.1.2.3}% 
+\contentsline {subsubsection}{\numberline {5.1.2.4}shotGame()}{11}{subsubsection.5.1.2.4}% 
+\contentsline {subsubsection}{\numberline {5.1.2.5}showStatus()}{11}{subsubsection.5.1.2.5}% 
+\contentsline {section}{\numberline {5.2}Dokumentacja klasy My\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Label}{12}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{12}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}Dokumentacja konstruktora i destruktora}{12}{subsection.5.2.2}% 
+\contentsline {subsubsection}{\numberline {5.2.2.1}MyLabel()}{12}{subsubsection.5.2.2.1}% 
+\contentsline {section}{\numberline {5.3}Dokumentacja klasy Status}{13}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{13}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}Dokumentacja konstruktora i destruktora}{13}{subsection.5.3.2}% 
+\contentsline {subsubsection}{\numberline {5.3.2.1}Status()}{14}{subsubsection.5.3.2.1}% 
+\contentsline {subsection}{\numberline {5.3.3}Dokumentacja funkcji sk\IeC {\l }adowych}{14}{subsection.5.3.3}% 
+\contentsline {subsubsection}{\numberline {5.3.3.1}getBoard()}{14}{subsubsection.5.3.3.1}% 
+\contentsline {subsubsection}{\numberline {5.3.3.2}getCode()}{14}{subsubsection.5.3.3.2}% 
+\contentsline {subsubsection}{\numberline {5.3.3.3}getShipName()}{15}{subsubsection.5.3.3.3}% 
+\contentsline {subsubsection}{\numberline {5.3.3.4}getSteps()}{15}{subsubsection.5.3.3.4}% 
+\contentsline {subsubsection}{\numberline {5.3.3.5}getType()}{15}{subsubsection.5.3.3.5}% 
+\contentsline {subsubsection}{\numberline {5.3.3.6}setBoard()}{15}{subsubsection.5.3.3.6}% 
+\contentsline {subsubsection}{\numberline {5.3.3.7}setCode()}{16}{subsubsection.5.3.3.7}% 
+\contentsline {subsubsection}{\numberline {5.3.3.8}setShipName()}{16}{subsubsection.5.3.3.8}% 
+\contentsline {subsubsection}{\numberline {5.3.3.9}setSteps()}{16}{subsubsection.5.3.3.9}% 
+\contentsline {subsubsection}{\numberline {5.3.3.10}setType()}{16}{subsubsection.5.3.3.10}% 
+\contentsline {subsubsection}{\numberline {5.3.3.11}toString()}{17}{subsubsection.5.3.3.11}% 
+\contentsline {chapter}{\numberline {6}Dokumentacja plik\IeC {\'o}w}{19}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Dokumentacja pliku mainwindow.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{19}{section.6.1}% 
+\contentsline {subsection}{\numberline {6.1.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{19}{subsection.6.1.1}% 
+\contentsline {section}{\numberline {6.2}Dokumentacja pliku mylabel.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{19}{section.6.2}% 
+\contentsline {subsection}{\numberline {6.2.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{20}{subsection.6.2.1}% 
+\contentsline {section}{\numberline {6.3}Dokumentacja pliku status.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{20}{section.6.3}% 
+\contentsline {subsection}{\numberline {6.3.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{20}{subsection.6.3.1}% 
+\contentsline {chapter}{Indeks}{21}{section*.18}% 

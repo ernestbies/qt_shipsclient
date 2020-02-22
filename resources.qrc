@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/obrazy">
+        <file>images/A.png</file>
+        <file>images/B.png</file>
+        <file>images/background.jpg</file>
+        <file>images/C.png</file>
+        <file>images/D.png</file>
+    </qresource>
+    <qresource prefix="/dzwieki">
+        <file>sounds/checked.wav</file>
+        <file>sounds/endgame.wav</file>
+        <file>sounds/hit.wav</file>
+        <file>sounds/miss.wav</file>
+        <file>sounds/newloadgame.wav</file>
+        <file>sounds/shotdown.wav</file>
+    </qresource>
+</RCC>

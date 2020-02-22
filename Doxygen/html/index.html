@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SpaceShips: Strona główna</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SpaceShips
+   </div>
+   <div id="projectbrief">Gra SpaceShips to połączenie gry w statki i sapera.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">SpaceShips Dokumentacja</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h2></h2>
+<p>Autorzy: Ernest Bieś, Konrad Czechowski, Dawid Kwaśny</p>
+<hr/>
+<h1>Podstawowe informacje </h1>
+<p>"Statki kosmiczne" to gra logiczna będąca połączeniem dwóch popularnych gier "Statki" oraz "Saper".</p>
+<h1>Zasady gry </h1>
+<p>Po rozpoczęciu gry na planszy o wymiarach 9x9 utworzonej z kwadratów są losowo rozmieszczone statki kosmiczne o różnych wielkościach: Dwa <em>Transportowce</em> o wymiarze 4 Trzy <em>Samoloty kosmiczne</em> o wymiarze 3 Trzy <em>Wahadłowce</em> o wymiarze 2 Dwa <em>Szturmowce</em> o wymiarze 1</p>
+<p>Statki nie są widoczne. Zadaniem gracza jest odnalezienie wszystkich statków w jak najmniejszej liczbie kroków. W przypadku odkrycia pola, które nie zawiera żadnego statku widoczna jest liczba, która wskazuje na ilu polach sąsiadujących z odkrytym polem znajdują się statki. Wobec powyższego gracz musi podejmować swoją decyzję dotyczącą pola, które w następnej kolejności odkryje na podstawie logicznego myślenia, gdyż tym samym zwiększa swoje szanse na odnalezienie statków w pobliżu.</p>
+<h1>Opis klienta </h1>
+<h2>Interfejs graficzny klienta </h2>
+<img src="../images/g.png" alt="GUI1" class="inline"/>
+<p>W głównym oknie programu po lewej stronie widoczna jest plansza o rozmiarze 9x9 kwadratów na której wyświetlane są ikony zestrzelonych statków oraz pola, które zostały odkryte przez gracza, a nie zawierają żadnych statków. Po uruchomieniu gry po lewej stronie wyświetlone zostają podstawowe informacje dotyczące zasad gry oraz statków jakie musimy zestrzelić. W górnym lewym rogu znajduje się przycisk za pomocą którego możemy ukryć zasady gry. W lewym dolnym rogu okna znajdują się pola służące do wprowadzenia nazwy użytkownika i hasła oraz przyciski za pomocą których możemy utworzyć nową grę na serwerze lub wczytać już istniejącą.Na dole w srodku okna znajduje się konsola na której wyświetlane są informacje dotyczące akcji podejmowanych przez gracza. Z prawej strony w dolnej części okna znajduje się licznik z aktualnie wykonanymi krokami przez gracza.</p>
+<img src="../images/b.png" alt="GUI2" class="inline"/>
+<p>W trakcie gry użytkownik po wskazaniu myszką wybranego pola i naciśnięciu lewego przycisku myszki odsłania poszczególne pola na planszy. W przypadku trafienia statku jego ikona zostaje wyświetlona w odpowiednim miejscu na planszy, natomiast w przypadku "pudła" we wskazanym polu pojawia się znak X oraz liczba wskazująca na ilu polach sąsiadujących ze wskazanym znajdują się statki. Równocześnie po wskazaniu pola odtwarzany jest odpowiedni dźwięk.</p>
+<h2>Instrukcja obsługi </h2>
+<p>Po uruchomieniu klienta użytkownik wprowadza nazwę użytkownika oraz hasło, a następnie naciska przycisk "Nowa gra". Zostaje utworzona nowa gra dla użytkownika, następnie korzystając z myszki naciska lewy przycisk na wybranym polu na planszy. Jeżeli pod odkrytym polem znajduje się statek, jego ikona zostanie wyświetlona w odpowiednim kwadracie oraz program zasygnalizuje trafienie odpowiednim dźwiękiem. Jeżeli natomiast wskazane pole nie zawiera żadnego statku to zostanie na nim wyświetlony znak X oraz liczba wskazująca na ilu polach sąsiadujących znajdują się statki. Jednocześnie za każdym wskazaniem pola zostaje zwiększony licznik znajdujący się w prawym, dolnym roku ekranu. Jednocześnie na konsoli będą pojawiały się komunikaty dotyczące trafienia danego statku, jego nazwy lub też, że oddany strzał to niestety "pudło". Po zestrzeleniu wszystkich statków kosmicznych wyświetlany jest komunikat z zapytaniem czy użytkownik chce zakończyć działanie programu. W przypadku udzielenia negatywnej odpowiedzi gra jest zapisywana na serwerze, natomiast klient zeruje wszelkie dane i ustawienia celem umożliwienia użytkownikowi rozpoczęcia nowej gry.</p>
+<img src="../images/k.png" alt="GUI3" class="inline"/>
+ </div></div><!-- PageDoc -->
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>
