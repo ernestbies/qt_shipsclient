@@ -1,8 +1,3 @@
----
-Autorzy: Ernest Bieś, Konrad Czechowski, Dawid Kwaśny
-
----
-
 Podstawowe informacje
 =====================
 
@@ -32,7 +27,7 @@ Opis klienta
 
 Interfejs graficzny klienta
 ---------------------------
-![GUI1](../images/g.png)
+![GUI](./docs/g.PNG)
 
 W głównym oknie programu po lewej stronie widoczna jest plansza o
 rozmiarze 9x9 kwadratów na której wyświetlane są ikony zestrzelonych
@@ -48,7 +43,7 @@ wyświetlane są informacje dotyczące akcji podejmowanych przez gracza. Z
 prawej strony w dolnej części okna znajduje się licznik z aktualnie
 wykonanymi krokami przez gracza.
 
-![GUI2](../images/b.png)
+![GUI2](./docs/b.PNG)
 
 W trakcie gry użytkownik po wskazaniu myszką wybranego pola i
 naciśnięciu lewego przycisku myszki odsłania poszczególne pola na
@@ -79,4 +74,4 @@ W przypadku udzielenia negatywnej odpowiedzi gra jest zapisywana na
 serwerze, natomiast klient zeruje wszelkie dane i ustawienia celem
 umożliwienia użytkownikowi rozpoczęcia nowej gry.
 
-![GUI3](../images/k.png)
+![GUI3](./docs/k.PNG)
